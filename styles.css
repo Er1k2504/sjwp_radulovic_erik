@@ -1,0 +1,24 @@
+/* klase, selektori, moze biti vise istih klasa */
+
+.treci{
+    color:darkgreen;
+}
+
+
+/* element selector */
+
+h2,p{
+    color: chartreuse;
+}
+
+#naslov{
+    color:aquamarine;
+}
+
+*{
+    background-color: darkred;
+}
+
+p[draggable="true"]{
+    background-color: orangered;
+}
