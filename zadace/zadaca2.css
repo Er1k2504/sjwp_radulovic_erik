@@ -2,99 +2,122 @@
 .plava{
     width: 400px;
     height: 300px;
-    background-color: #1C204E;
-    position: relative;
-    z-index: 20;
-}
-
-.pk2{
-      width:20px;
-    height: 60px;
-    background:#1C204E;
+    background-color: #2F434E;
     position: absolute;
-    left: 100px;
-    bottom: 45px;
-  
 }
-.pk1{
-
-    width:20px;
-    height: 60px;
-    background: #1C204E;
-    position: absolute;
-    left: 20px;
-    bottom: 45px;
-}
-.bijeli{
-    width:142px;
-    height:142px;
-    background:#FEF7F5;
+.crvena{
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    position: absolute;
-    left: 30px;
-    bottom: 30px;
+    background: #E25C57;
+    position: relative;
+    left: 117px;
+    top: 80px; 
+  }
+  .zuta{
+      width:150px;
+    height: 45px;
+    background:#F3AC3C;
+      position: relative;
+      bottom: 40px;
+  }
+  .bot{
+      width:150px;
+      height:45px;
+    background:#2F434E;
+    position:absolute;
+    top:120px;
+  }
+  .trokut1{
+  width: 0;
+  height: 0;
+  border-bottom: 45px solid #F3AC3C;     /* color */
+  border-left: 50px solid transparent;
+  position:relative;
+  right: 50px;
 }
+  .trokut2{
+  width: 0;
+  height: 0;
+  border-bottom: 45px solid #F3AC3C;     /* color */
+  border-right: 50px solid transparent;
+  position:relative;
+  left:150px;
+  bottom:45px;
+  }
+  .krug1{
+    width: 20px;
+    height: 20px;
+    border-radius:50%;
+    background: #E25C57;
+    position: relative;
+    bottom: 75px;
+    right: 10px;
+  }
+  .krug2{
+        width: 20px;
+    height: 20px;
+    border-radius:50%;
+    background: #E25C57;
+    position: relative;
+    bottom: 75px;
+    left: 65px;
+    bottom:95px;
+  }
+  .krug3{
+    width: 20px;
+    height: 20px;
+    border-radius:50%;
+    background: #E25C57;
+    position: relative;
+    bottom: 115px;
+    left:140px;
     
-  .div {
-    width: 200px;
-    height: 200px;
-    background: #E7772F;
-    border-radius: 50%;
-    position: absolute;
-    left: 90px;
-    top: 41px;
-  }
-  .border{
-    width: 500px;
-    height: 300px;
-    background-color: white;
-    border: solid black;
-    position: relative;
   }
 
-  .pp{
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    left: 20px;
-    top: 50px;
+.border{
+  width: 500px;
+  height: 300px;
+  border: black solid;
+  position: absolute;
   }
   .pp img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
+    position: relative;
+    left: 25px;
 
   }
+
 .ip{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: absolute;
+    position: relative;
     left: 200px;
 }
 .opis{
-    position: absolute;
-    top: 50px;
+    position: relative;
     left: 150px;
 }
 .mail{
-    position: absolute;
-    top: 100px;
+    position: relative;
+    top: 125px;
     left: 150px;
 }
 .facebook img{
     width: 100px;
     height: 100px;
-    position: absolute;
-    top: 175px;
+    position: relative;
+    top: 25px;
     left: 150px;
     border-radius: 20%;
 }
 .instagram img{
     width: 100px;
     height: 100px;
-    position: absolute;
-    top: 175px;
-    left: 300px;
+    position: relative;
+    left: 200px;
+    top: 25px;
 }
 p{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
