@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+            position: relative;
+            left: 100px;
+            top: 100px;
+            animation-name: kretanje;
+            animation-duration: 1.8s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes kretanje{
+            0%{
+                transform: translateY(0px);
+            }
+            100%{
+                transform:translateY(50px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div></div>
+    
+</body>
+</html>
