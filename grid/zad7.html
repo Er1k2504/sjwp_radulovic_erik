@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sud{
+  display:grid;
+  grid-template-columns:150px 1fr;
+  grid-template-areas:
+    "a a"
+    "b c"
+    "d d"
+    "e e";
+  gap:12px;
+  width:500px;
+  padding:10px;
+  background:#eee;
+}
+
+.sud div{
+  padding:15px;
+  font-family:Arial;
+  border-radius:4px;
+}
+
+.a{
+  grid-area:a;
+  background:#9e9e9e;
+  color:white;
+}
+
+.b{
+  grid-area:b;
+  background:#444;
+  color:white;
+}
+
+.c{
+  grid-area:c;
+  background:#555;
+  color:white;
+}
+
+.d{
+  grid-area:d;
+  background:#cfcfcf;
+}
+
+.e{
+  grid-area:e;
+  background:#9e9e9e;
+  color:white;
+}
+    
+    </style>
+</head>
+
+<body>
+
+    <div class="sud">
+  <div class="a">Header</div>
+  <div class="b">Sidebar</div>
+  <div class="c">
+    Content <br>
+    More content than we had before so this column is now quite tall.
+  </div>
+  <div class="d">Sidebar 2</div>
+  <div class="e">Footer</div>
+</div>
+    
+</body>
+</html>
