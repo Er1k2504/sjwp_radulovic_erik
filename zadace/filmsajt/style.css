@@ -16,6 +16,7 @@ body{
     scroll-behavior: smooth;
 }
 
+
 .nav{
     background-color: rgb(4, 4, 31);
     width: 100%;
@@ -91,12 +92,11 @@ body{
 .red2,
 .red{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: flex-start;  
     width: 90%;
     max-width: 1200px;
-    margin: auto;
-    gap: 15px;
+    margin: 0 auto;
+    gap: 98px;
 }
 .slika:hover{
     transform: scale(1.2);
@@ -109,5 +109,6 @@ body{
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+  justify-content: space-evenly;
 }
 
