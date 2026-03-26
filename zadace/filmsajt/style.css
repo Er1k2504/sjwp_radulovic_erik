@@ -1,4 +1,13 @@
 
+.h1{
+    margin: 0px;
+}
+body{
+    background-color: rgb(15, 15, 77);
+    margin: 0;
+    padding: 0;
+}
+
 *{
     margin: 0px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -10,14 +19,17 @@
 .nav{
     background-color: rgb(4, 4, 31);
     width: 100%;
-    height: 200px;
-    position: relative;
+    height: 100px;
+    position: fixed;
     overflow: visible;
     margin: 0;
     display: flex;
     gap: 20px;
     justify-content: center;
     align-items: center;
+    z-index: 999;
+    top: 0;
+    left: 0;
 
 
 }
@@ -30,9 +42,6 @@
     position: absolute; 
 }
 
-body{
-    background-color: rgb(15, 15, 77);
-}
 
 .nav a{
     color: white;
