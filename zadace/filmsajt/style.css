@@ -4,6 +4,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 .nav{
@@ -63,6 +64,7 @@ body{
     text-align: center;
 }
 .slika{
+    text-align: center;
     width: 150px;
     flex: 0 0 auto;
     display: flex;
@@ -72,11 +74,10 @@ body{
     
 }
 .slika img{
-    width: 150px;
-    height: 270px;
-    max-width: 180px;
-    border-radius: 8px;
-    object-fit: contain;
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 .red2,
 .red{
@@ -94,8 +95,8 @@ body{
 
 .grid{
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 113px;                           
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 40px;                           
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
