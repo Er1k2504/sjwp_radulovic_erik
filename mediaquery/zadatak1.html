@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+
+        .header{background: navy; color: white; padding: 20px}
+        .menu{background: rgb(231, 47, 27); color:white; padding: 20px}
+        .main{background: rgb(41, 42, 102); color:white; padding: 20px}
+        .hero{background: dodgerblue; color: white; padding: 20px}
+        .banner{background: rgb(252, 255, 75); color:white; padding: 20px}
+        .extra{background: rgb(62, 189, 94); color:white; padding: 20px}
+        .image{background: rgb(173, 214, 255); color: white; padding: 20px}
+
+
+        /* pc */
+    @media (min-width: 1024px){
+
+
+    }
+
+    /* tablet */
+    @media(min-width: 768px){
+        .container{
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-areas: 
+            "header header"
+            "hero hero" 
+            "menu main"
+            "menu banner"
+            "menu extra"
+            "menu image";
+        }
+        .header{grid-area: header;}
+        .menu{grid-area: menu;}
+        .hero{grid-area: hero;}
+        .main{grid-area: main;}
+        .banner{grid-area: banner;}
+        .extra{grid-area: extra;}
+        .image{grid-area: image;}
+
+    }
+    /* mobitel */
+    @media(max-width: 767px){
+    
+        .container{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "header"
+            "menu"
+            "hero"
+            "main"
+            "banner"
+            "extra"
+            "image";
+
+        }
+        .header{grid-area: header;}
+        .menu{grid-area: menu;}
+        .hero{grid-area: hero;}
+        .main{grid-area: main;}
+        .banner{grid-area: banner;}
+        .extra{grid-area: extra;}
+        .image{grid-area: image;}
+
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">HEADER</header>
+        <nav class="menu">MENU</nav>
+        <main class="main">MAIN</main>
+        <section class ="hero">HERO</section>
+        <section class="banner">BANNER</section>
+        <section class="extra">EXTRA</section>
+        <section class="image">IMAGE</section>
+    </div>
+    
+</body>
+</html>
