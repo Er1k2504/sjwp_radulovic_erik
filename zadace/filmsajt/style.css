@@ -1,13 +1,14 @@
-.h1{
+.h1 {
     margin: 0px;
 }
-body{
+
+body {
     background-color: rgb(15, 15, 77);
     margin: 0;
     padding: 0;
 }
 
-*{
+* {
     margin: 0px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
@@ -15,13 +16,11 @@ body{
     scroll-behavior: smooth;
 }
 
-.nav{
+.nav {
     background-color: rgb(4, 4, 31);
     width: 100%;
     height: 100px;
     position: fixed;
-    overflow: visible;
-    margin: 0;
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -29,83 +28,61 @@ body{
     z-index: 999;
     top: 0;
     left: 0;
-
-
 }
 
-.naslovna{
-    color: rgb(255, 255, 255);
+.naslovna {
     font-size: 50px;
+    position: absolute; 
     top: 20px;
     left: 30px;
-    position: absolute; 
 }
 
-
-.nav a{
-    color: white;
+.nav a {
     font-size: 20px;
-    text-decoration: none;
-    position: relative;
-    
     padding: 20px;
-
 }
 
-.nav a:hover{
+.nav a:hover {
     color: rgba(255, 255, 255, 0.534);
-    text-decoration: none;
-    position: relative;
     transform: scale(1.2);
 }
 
-.zanr{
-    color: white;
+.zanr {
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 120px 0 20px; /* push content below navbar */
     font-size: 28px;
 }
 
-.naslov{
-    font-size: 25px;
-    color: white;
+.naslov {
+    font-size: 20px;
     text-align: center;
-}
-.slika{
-    text-align: center;
-    width: 150px;
-    flex: 0 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap:8px;
-    align-items: center;
-    
-}
-.slika img{
-  width: 100%;
-  height: 270px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-.red2,
-.red{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    gap: 15px;
-}
-.slika:hover{
-    transform: scale(1.2);
 }
 
-.grid{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 40px;                           
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 40px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 60px;
+}
+
+.slika {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.3s ease;
+}
+
+.slika img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.slika:hover {
+    transform: scale(1.1);
 }
