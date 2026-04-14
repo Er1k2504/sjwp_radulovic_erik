@@ -1,16 +1,34 @@
+.h1{
+    margin: 0px;
+}
+body{
+    background-color: rgb(15, 15, 77);
+    margin: 0;
+    padding: 0;
+}
 
 *{
     margin: 0px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 .nav{
     background-color: rgb(4, 4, 31);
-    width: 1950px;
-    height: 200px;
-    position: relative;
-    overflow: hidden;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    overflow: visible;
     margin: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    top: 0;
+    left: 0;
 
 
 }
@@ -23,28 +41,71 @@
     position: absolute; 
 }
 
-body{
-    background-color: rgb(15, 15, 77);
-}
 
 .nav a{
     color: white;
     font-size: 20px;
     text-decoration: none;
     position: relative;
-    top: 150px;
+    
     padding: 20px;
 
 }
 
 .nav a:hover{
-    color: rgb(255, 255, 255);
-    font-size: 25px;
-    transform: scale(1.2);
+    color: rgba(255, 255, 255, 0.534);
     text-decoration: none;
+    position: relative;
+    transform: scale(1.2);
 }
 
-.nav a.active{
-    color:rgb(255, 255, 255);
-    font-size: 30px;
+.zanr{
+    color: white;
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 28px;
+}
+
+.naslov{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+.slika{
+    text-align: center;
+    width: 150px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    align-items: center;
+    
+}
+.slika img{
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.red2,
+.red{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    gap: 15px;
+}
+.slika:hover{
+    transform: scale(1.2);
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 40px;                           
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
