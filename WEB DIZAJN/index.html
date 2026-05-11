@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <p class = 'parag'>prvi paragraf</p>
+    <p class = 'parag'>drugi paragraf</p>
+    <div>
+        vanjski
+        <div>unutarnji div</div>
+    </div>
+
+    <svg width="300" height="300">
+        <circle style="fill:dodgerblue" stroke="black" cx="50", cy="50", r="40"></circle>
+        <line x1="0" y1="5" x2="100" y2="200" stroke="black"></line>
+        <rect x="10" y="50" width="10" height="30" ></rect>
+        <polygon points="0,0 10,5 20,20 10,15 0,20"></polygon>
+    </svg>
+
+    <svg width="300" height="300">
+
+        <rect x="0" y="100" width="100" height="100"></rect>
+        <line x1="0" y1="100" x2="50" y2="50" stroke="black"></line>
+        <line x1="100" y1="100" x2="50" y2="50" stroke="black"></line>
+        <circle style="fill:dodgerblue" stroke="black" cx="50", cy="80", r="10"></circle>
+
+
+
+    </svg>
+    
+    <script>
+        d3.selectAll('.parag').style('color', 'blue')
+        .style('font-size', '40px')
+
+    
+
+    </script>
+
+    
+
+
+
+
+</body>
+</html>
