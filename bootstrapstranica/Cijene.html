@@ -1,81 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lubenice iz Batrine</title>
-     <link rel="ikonica" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ-gGZ0fY-W6qNP9SwS4zLvZpG2TnjKvbYGQ&s" type="image/png">
-     </head>
-    <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lubenice iz Batrine</title>
 
+<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ-gGZ0fY-W6qNP9SwS4zLvZpG2TnjKvbYGQ&s" type="image/png">
 
-#carouselExampleIndicators {
-    max-width: 1300px;
-    margin: 150px auto;
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+
+.card-img-top{
+    height: 200px;
+    object-fit: cover;
 }
 
-        .card-body{
-            background-color: green
-        }
-
-        .card{
-            margin-top: 200px;
-        }
-
-        h1{
-           font-style: italic;
-            color:rgb(107, 45, 45) !important;
-            text-align: center;
-        }
-
-
-    .carousel {
-    margin-top: 500px;
-    margin-bottom: 100px;
+.card{
+    height: 100%;;
 }
 
-.carousel-item img{
-            height: 700px;
-            object-fit: cover;
+body{
+    background-color: rgb(231, 94, 94) !important;
+}
 
-        }
-
-
-        body{
-            background-color: rgb(231, 94, 94) !important;
-        }
-        .navbar{
+.navbar{
     background-color: green !important;
 }
-    </style>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+h1{
+    font-style: italic;
+    color: rgb(107, 45, 45) !important;
+    text-align: center;
+}
+
+.card-body{
+    background-color: green;
+    color: white;
+}
+
+.container.mt-4{
+    margin-bottom: 120px;
+}
+
+footer{
+    background-color: green;
+    color: white;
+}
+
+</style>
+</head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-          <img src="https://png.pngtree.com/recommend-works/png-clipart/20250117/ourmid/pngtree-a-small-watermelon-png-image_15207046.png" alt="Logo" width="40" height="40" class="me-2">
-  Lubenice iz Batrine
+      <img src="https://png.pngtree.com/recommend-works/png-clipart/20250117/ourmid/pngtree-a-small-watermelon-png-image_15207046.png" width="40" height="40" class="me-2">
+      Lubenice iz Batrine
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="/bootstrapstranica/lubenice.html">Početna</a>
+          <a class="nav-link" href="/bootstrapstranica/lubenice.html">Početna</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/bootstrapstranica/lokacije.html">Lokacije</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="/bootstrapstranica/">Cijene</a>
+          <a class="nav-link active" href="/bootstrapstranica/Cijene.html">Cijene</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-    
+<br><br>
+
+<h1>Cijene:</h1>
+
+<div class="container mt-4">
+  <div class="row justify-content-center">
+
+    <div class="col-md-4 d-flex justify-content-center">
+      <div class="card shadow" style="width: 20rem;">
+        <img src="https://exotic-king.eu/wp-content/uploads/2023/11/Mini_lubenica.jpg" class="card-img-top">
+        <div class="card-body text-center">
+          <h5 class="card-title">Mini lubenica</h5>
+          <p>Mala i slatka</p>
+          <h4 class="text-light">3€</h4>
+          <button class="btn btn-light">Kupi</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 d-flex justify-content-center">
+      <div class="card shadow" style="width: 20rem;">
+        <img src="https://staresortesemena.com/wp-content/uploads/2020/09/Jubilee-1.jpg" class="card-img-top">
+        <div class="card-body text-center">
+          <h5 class="card-title">Velika lubenica</h5>
+          <p>Obiteljska veličina</p>
+          <h4 class="text-light">7€</h4>
+          <button class="btn btn-light">Kupi</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 d-flex justify-content-center">
+      <div class="card shadow" style="width: 20rem;">
+        <img src="https://image.dnevnik.hr/media/images/1920x1080/Aug2024/62884793-dinja.jpg" class="card-img-top">
+        <div class="card-body text-center">
+          <h5 class="card-title">Dinja</h5>
+          <p>Slatka i osvježavajuća</p>
+          <h4 class="text-light">5€</h4>
+          <button class="btn btn-light">Kupi</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<br><br>
+
+<footer class="py-4 mt-5">
+  <div class="container text-center">
+
+    <h5 class="mb-3">Lubenice iz Batrine</h5>
+
+    <p class="mb-2">
+      Svježe lubenice i dinje direktno iz srca Slavonije!
+    </p>
+
+    <div class="mb-3">
+      <a href="/bootstrapstranica/lubenice.html" class="text-light me-3">Početna</a>
+      <a href="/bootstrapstranica/lokacije.html" class="text-light me-3">Lokacije</a>
+      <a href="/bootstrapstranica/Cijene.html" class="text-light">Cijene</a>
+    </div>
+
+    <small>© 2026 Lubenice iz Batrine</small>
+
+  </div>
+</footer>
+
 </body>
 </html>
